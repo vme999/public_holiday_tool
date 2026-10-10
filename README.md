@@ -44,6 +44,8 @@ def main(input_data: dict[str, Any] | None = None) -> dict[str, Any]:
 
 不传 `date` 或 `target_date` 时，会按 `Asia/Beijing` 当前日期判断今天。
 
+如果只需要判断今天是否为工作日，可单独使用 `is_working_day_today.py`。它不接收输入，`main()` 直接返回 `bool`。该脚本独立解析日历中标注的休假/补班日期及固定日期的年度重复事件，无需依赖 `holiday_tool.py`。
+
 ## Output
 
 ```json
