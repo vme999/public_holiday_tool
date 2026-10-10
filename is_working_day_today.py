@@ -103,9 +103,5 @@ def is_today_working_day() -> bool:
     return today.weekday() < 5
 
 
-def main() -> bool:
-    return is_today_working_day()
-
-
 if __name__ == "__main__":
-    print(main())
+    print(is_today_working_day())
