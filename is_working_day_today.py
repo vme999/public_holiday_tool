@@ -105,3 +105,7 @@ def is_today_working_day() -> bool:
 
 def main() -> bool:
     return is_today_working_day()
+
+
+if __name__ == "__main__":
+    print(main())
